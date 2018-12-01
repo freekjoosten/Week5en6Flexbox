@@ -9,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0px;
-    min-height: 100%;
     font-family: arial, helvetica, sans-serif;
 }
 
@@ -55,22 +54,22 @@ a:hover {
 
 .mid-section {
     display: flex;
-    flex-direction: row;
     flex: 1 1 auto;
-    
+    padding: 0px; 
 }
     .main-content {
-        flex: 3 3 40%; 
+        flex: 1 1 auto; 
         order: 2;
         background:white;
         padding: 0 1em;
     }
 
     .sidebar {
-        flex: 1 1 20%;
+        flex: 1 0 20vw;
         background: #CCC;
         text-align: center;
-        padding: 1em;
+
+        padding: 5px;
     }
 
     .sidebar-left {
@@ -80,11 +79,9 @@ a:hover {
     .sidebar-right {
         order: 3;
     }
-
+/* GRRRR Mijn image heeft meer padding dan ik wil en ik krijg het niet goed */
     img  {
         max-width: 100%;
-        margin: 0px;
-        padding: 0px;  
     }
 
     .sidebar-title {
