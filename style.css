@@ -67,8 +67,6 @@ a:hover {
     .sidebar {
         flex: 1 0 20vw;
         background: #CCC;
-        text-align: center;
-
         padding: 5px;
     }
 
@@ -79,13 +77,19 @@ a:hover {
     .sidebar-right {
         order: 3;
     }
-/* GRRRR Mijn image heeft meer padding dan ik wil en ik krijg het niet goed */
+
     img  {
         max-width: 100%;
     }
 
+    figure {
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
+    }
+
     .sidebar-title {
         font-size: 16px;
+        padding-left: 10px;
     }
 
 .footer {
