@@ -1,24 +1,40 @@
 * {
     box-sizing: border-box;
-    border: 1px solid green;
 }
 
+html {
+    height: 100%;
+}
 body {
     display: flex;
     flex-direction: column;
-    
+    margin: 0px;
+    min-height: 100%;
+    font-family: arial, helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #CCC;
+    color: white;
+    background: green;
+    padding: 0 1em;
+    flex: 0 0 auto;
 }
 
   .site-name {
     font-size: 24px;
-
+    font-weight: 600;
   }
 
   .navigation {
@@ -30,7 +46,7 @@ body {
         display: flex;
         list-style-type: none;
         justify-content: center;
-        border: 2px solid red;
+        padding-left: 0px;
     }
 
         .nav-link {
@@ -40,17 +56,21 @@ body {
 .mid-section {
     display: flex;
     flex-direction: row;
+    flex: 1 1 auto;
+    
 }
     .main-content {
         flex: 3 3 40%; 
         order: 2;
-        background: #FCC;
+        background:white;
+        padding: 0 1em;
     }
 
     .sidebar {
         flex: 1 1 20%;
-        background: #FFC;
+        background: #CCC;
         text-align: center;
+        padding: 1em;
     }
 
     .sidebar-left {
@@ -62,10 +82,18 @@ body {
     }
 
     img  {
-        max-width: 100%;  
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;  
+    }
+
+    .sidebar-title {
+        font-size: 16px;
     }
 
 .footer {
     text-align: center;
-    background: #CCF;
+    background: #804E49;
+    color: white;
+    flex: 0 0 auto;
 }
