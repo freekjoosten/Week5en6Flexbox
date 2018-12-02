@@ -98,3 +98,21 @@ a:hover {
     color: white;
     flex: 0 0 auto;
 }
+
+@media screen and (max-width: 812px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .mid-section {
+        flex-direction: column;
+    }
+
+    .sidebar { 
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto; 
+        align-items: center;
+    
+    }
+}
