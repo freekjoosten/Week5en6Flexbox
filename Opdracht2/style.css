@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    min-height: 100vh;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: green;
+    padding: 0 1em;
+    flex: 0 0 auto;
+}
+
+  .site-name {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-around;   
+  }
+
+    .navigation-list {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+        .nav-link {
+            margin: 1em;
+        } 
+  
+  
+  .mid-section {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    padding: 0px; 
+  }
+  
+    .sidebar {
+      display: flex;
+      flex-direction: column; 
+      flex: 0 0 20vw;
+      background: #ccc;
+    }
+
+        .sidebar-title {
+            font-size: 16px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        img  {
+          max-width: 100%;
+        }
+
+        figure {
+            margin-inline-start: 10px;
+            margin-inline-end: 10px;
+        }
+  
+    .main-section {
+      display: flex;
+      flex-direction: column;
+    }
+  
+      .main-section-top {
+        display: flex; 
+        flex: 1 1 auto;
+      }
+  
+        .main-content {
+            padding: 0 1em;
+        }
+  
+        /* Nog een sidebar hier */
+  
+      .main-section-bottom {
+        text-align: center; 
+        background: #804E49;
+        color: white;
+      }
+
+@media screen and (max-width: 812px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .mid-section {
+        flex-direction: column;
+    }
+
+    .main-section-top {
+        flex-direction: column;
+    }
+
+    .sidebar { 
+        flex: 1 1 auto; 
+        align-items: center;
+    }
+}
